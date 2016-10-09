@@ -22,6 +22,7 @@ var a,
 typeof vord // 'object'
 typeof unde // 'undefined'
 typeof numb // 'number'
+typeof NaN // 'number'
 typeof stri // 'string'
 typeof bool // 'boolean'
 typeof symb // 'symbol'
@@ -40,3 +41,9 @@ typeof box // 'function'
  arr instanceof Array // true
  epx instanceof RegExp // true
  box instanceof Function // true
+
+
+// attention
+  NaN === NaN // false
+  isNaN(NaN) // true
+  isNaN('A') // true
